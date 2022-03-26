@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body{
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blueviolet;
+}
+h2{
+    color: aquamarine;
+}
+#principal{
+    text-align: center;
+}
+.nome{
+    text-align: center;
+}
+div{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid red;
+    margin: 10px;
+    outline: 4px solid yellow;
+    padding: 10px;
+}
+div#biu > p{
+    display: none;
+    text-align: center;
+}
+div#biu:hover > p, div#biu:hover{
+    display: block;
+    background-color: aliceblue;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+a:active{
+    background-color: black;
+}
+

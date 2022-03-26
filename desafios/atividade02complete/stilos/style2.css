@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'android', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+body{
+    margin-top: 0.7em;
+    font-family: var(--fonte-padrao);
+    background-color: #c5ebd6;
+}
+nav{
+    margin: -10px;
+    border-radius: 10px 0px 0px 0px;
+    background-image: linear-gradient(to bottom, var(--color5), transparent);
+    padding: 10px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+nav > a:hover{
+    background-image: linear-gradient(to bottom, var(--color5), white);
+    color: #063d1e;
+    transition-duration: 0.6s;
+}
+main{
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: white; 
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+h1{
+    margin-bottom: 10px;
+margin-top: 15px;
+color: #1a5c37;
+font-weight: bold;
+text-shadow:2px 2px 2px rgba(192, 192, 192, 0.678);
+}
+p{
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+form{
+    line-height: 1.2em;
+}
+div.autura input{
+    cursor: pointer;
+}
+div.autura{
+    margin-top: 20px;
+}
+div.autura:hover{
+    background-image: linear-gradient(to right, var(--color1), transparent);
+}
+input{
+    outline: none;
+}
+select{
+    background-color: rgba(192, 192, 192, 0.212);
+    cursor: pointer;
+    outline: none;
+}
+textarea{
+    outline: none;
+}
+div.linha{
+    position: relative;
+}
+div.linha .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 28%;
+    bottom: -2px;
+    left: 0;
+    background-color: rgba(192, 192, 192, 0.76);
+}
+div.linha .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 28%;
+    bottom: -2px;
+    left: 0;
+    background-color: #3ddc84;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+}
+div.linha input:focus ~ .underline::after{
+    transform: scaleX(1)
+}
+fieldset.linhaa input{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-top: 5px;
+    background-color: #063d1e;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:active{
+    background-color: #1a5c37;
+    transition:all 0.2s;
+}
+button:hover{
+    font-weight: bold;
+}

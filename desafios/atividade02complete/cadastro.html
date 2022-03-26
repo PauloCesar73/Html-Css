@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stilos/style2.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="#">Home</a>
+            <a href="site.html">Notícias</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <div>
+            <h1>Cadastro</h1>
+            <p>Complete suas informações:</p>
+        </div>
+        <form>
+            <fieldset class="linhaa">
+                <div class="linha">
+                    <input type="text" name="nome" id="nome" placeholder="Enter your name." required>
+                                    <div class="underline"></div>
+                </div>
+                <div class="linha">
+                    <input type="text" name="sobrenome" id="sobrenome"  placeholder="Enter your sobrenome." required>
+                    <div class="underline"></div>
+                </div>
+            </fieldset>
+            <div class="linha">
+                <input type="emaill" nome="email" id="email"  placeholder="Enter your email." required>
+                <div class="underline"></div>
+            </div>
+            <div class="autura">
+                <label for="devweb">Oque você faz?</label><br>
+                    <input type="radio" name="devweb" value="frontend">Front-end
+                </label>
+                <label><input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label><input type="radio" name="devweb" value="fullstake">Full-Stake
+                </label>
+            </div>
+            <div class="autura">
+                <label for="forma">Você é:</label>
+                 <select name="forma" id="senioridade">
+                     <option selected disabled value="">Select...</option>
+                     <option>Junior</option>
+                     <option>Pleno</option>
+                     <option>Senior</option>
+                 </select>
+            </div>
+            <fieldset>
+                <div class="autura">
+                    <label>Selecione as suas tec:</label><br>
+                    <input type="checkbox" id="tec1" name="tec1" volue="html">
+                    <label for="tec1">Html</label>
+                    <input type="checkbox" id="tec2" name="tec2" volue="css">
+                    <label for="tec2">css</label>
+                    <input type="checkbox" id="tec3" name="tec3" volue="js">
+                    <label for="tec3">js</label>
+                    <input type="checkbox" id="tec4" name="tec4" volue="php">
+                    <label for="tec4">Php</label>
+                    <input type="checkbox" id="tec5" name="tec5" volue="python">
+                    <label for="tec5">python</label>
+                </div>
+            </fieldset>
+            <div class="autura">
+                <br>
+                <label>Conte um pouco da sua experiência:</label>
+                <textarea name="experiência" id="experiência" rows="6" style="width: 26em" placeholder="type it..."></textarea>
+            </div>
+            <button type="submit">Concluído</button>
+        </form>
+        <br>
+    </main>
+</body>
+</html>

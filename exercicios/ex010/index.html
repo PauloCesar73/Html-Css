@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/fotop.png" type="image/png ">
+        <source media="(max-width: 1050px)" srcset="img/fotom.png" type="image/png">
+        <img src="img/fotog.png" alt="timagem grande flex">
+    </picture>
+    <h1>Aprendendo a reproduzir audio</h1>
+    <p>Olha ai o audio simples</p>
+    <audio src="audio/Till I Let Go (Instrumental) - NEFFEX.mp3" controls ></audio>
+    <p>Agr o audio composto</p>
+    <audio preload="metadata" controls loop >
+        <source src="audio/Till I Let Go (Instrumental) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="audio/Till I Let Go (Instrumental) - NEFFEX.ogg" type="audio/ogg">
+        <source src="audio/Till I Let Go (Instrumental) - NEFFEX.wav" type="audio/wav">
+
+    </audio>
+    <h1>Agora é vídeo em meu próprio server(localmente</h1>
+    <p>Olha o vídeo aii modo simples</p>
+    <video src="video/pexels-rulo-davila-5380467.mp4" width="500" height="300" controls></video>
+    <p>Modo composto</p>
+    <video width="500" height="300" controls>
+        <source src="video/pexels-rulo-davila-5380467.mp4" type="">
+        <source src="video/Pexels-Rulo-Davila-5380467.m4v" type="">
+    </video>
+    <h1>Colocando vídeos externos</h1>
+    <p>Ai um vídeo externo tipo do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
