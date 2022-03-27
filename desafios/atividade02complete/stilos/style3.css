@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-weight: normal;
+    font-size: 4em;
+}
+header p{
+    padding-bottom: 50px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+}
+section p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: silver;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.349);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem p{
+    border-radius: 2px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.452);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg );
+    background-position: right center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav{
+    background-image: linear-gradient(to bottom, black, white);
+    padding: 10px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+nav > a:hover{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.253);
+    text-decoration: underline;
+    transition-duration: 0.6s;
+}
